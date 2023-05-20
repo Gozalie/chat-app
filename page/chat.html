@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <script src="../js/feather.js"></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover">
+        <!-- HEAD -->
+        <div class="chat-header1">
+          <div class="chat-contact">
+            <div class="chat-name-contact">
+              <a href="../index.html"><i data-feather="arrow-left" class="chat-arrow-close"></i></a>
+              <img src="../img/1.jpg" alt="profile chat" />
+              <span>Fikri</span>
+            </div>
+
+            <div class="chat-feature">
+              <i data-feather="video" class="video"></i>
+              <i data-feather="phone" class="phone"></i>
+              <i data-feather="more-vertical" id="more" class="more"></i>
+            </div>
+          </div>
+
+          <div id="chat-more-form" class="chat-more-form">
+            <a href="#">Contact</a>
+            <a href="#">Media,Link and Doc</a>
+            <a href="#">Search</a>
+            <a href="#">Wallpaper</a>
+            <a href="#">Other</a>
+          </div>
+        </div>
+        <!-- BODY -->
+        <div class="chat-body1">
+          <div class="chat-box-cover">
+            <div class="chatting-ask">
+              <p>Hello sir...</p>
+              <span class="chat-time">12.05</span>
+            </div>
+            <div class="ca0">
+              <div class="chatting-answer">
+                <p>Hello ...</p>
+                <span class="chat-time">12.07</span>
+              </div>
+            </div>
+            <div class="chat-write">
+              <div class="chat-write-text">
+                <i data-feather="smile" class="smile"></i>
+                <input type="text" class="write" id="chat-write-text" placeholder="write here..." />
+                <i data-feather="paperclip" class="paperclip"></i>
+                <i data-feather="camera" class="camera-chat"></i>
+              </div>
+              <div class="chat-voice">
+                <i data-feather="mic" class="mic"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import { featherIcon, navbarMore, navbarSearch } from "../js/script.js";
+      featherIcon();
+      navbarMore();
+      navbarMore();
+    </script>
+  </body>
+</html>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet" />
-    <script src="js/feather.js"></script>
-    <title>Goz chat App</title>
+    <script src="../js/feather.js"></script>
+    <title>Group</title>
   </head>
   <body>
     <div class="container">
@@ -38,15 +38,15 @@
           </div>
 
           <div id="chat-nav" class="chat-nav">
-            <a href="index.html" class="chat person chat-nav-border">Person</a>
-            <a href="./page/group.html" class="chat group">Group</a>
-            <a href="./page/status.html" class="chat status">Status</a>
+            <a href="../index.html" class="chat person">Person</a>
+            <a href="group.html" class="chat group chat-nav-border">Group</a>
+            <a href="status.html" class="chat status">Status</a>
           </div>
         </div>
         <!-- BODY -->
         <div class="chat-body">
           <div class="chat-info">
-            <span class="chat-log">Chat: (1)</span>
+            <span class="chat-log">Group: (1)</span>
             <div class="chat-sort">
               <span id="recent">Recent</span>
               <span id="longest">Longest</span>
@@ -54,19 +54,19 @@
               <i data-feather="arrow-down" id="longest-icon" class="longest"></i>
             </div>
           </div>
-          <a href="./page/new-chat.html" class="chat-new-message">
+          <a href="./new-chat.html" class="chat-new-message">
             <div class="cnm-00">
               <div class="cnm-01">
-                <i data-feather="message-square"></i>
+                <i data-feather="users"></i>
               </div>
             </div>
           </a>
           <div class="chat-box-cover">
-            <a href="./page/chat.html" class="chat-box">
-              <img src="img/1.jpg" alt="profile picture" />
+            <a href="chat-group.html" class="chat-box">
+              <img src="../img/1.jpg" alt="profile picture" />
               <div class="chat-detail">
-                <div class="chat-time">03.15</div>
-                <div class="chat-name">Fikri</div>
+                <div class="chat-time">19.15</div>
+                <div class="chat-name">Anak Soleh</div>
                 <div class="chat-text">Hello...</div>
               </div>
             </a>
@@ -75,7 +75,7 @@
       </div>
     </div>
     <script type="module">
-      import { featherIcon, navbarSearch, navbarMore, sort } from "./js/script.js";
+      import { featherIcon, navbarSearch, navbarMore, sort } from "../js/script.js";
       featherIcon();
       navbarSearch();
       navbarMore();
